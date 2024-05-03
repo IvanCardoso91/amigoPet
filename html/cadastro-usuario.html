@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro usuario - Amigopet</title>
-    <link rel="stylesheet" href="/amigoPet/style/style-login-usuario.css">
+    <link rel="stylesheet" href="/amigoPet/assets/no-image-available.png">
 </head>
 
 <body>
@@ -16,12 +16,29 @@
         <h1>Faça seu Cadastro</h1>
         <form action="/" method="POST">
             <div>
+                <label for="nome-input">Nome:</label>
+                <input type="text" id="nome-input" name="nome" required placeholder="Digite seu nome">
+                <input type="text" id="sobrenome-input" name="sobrenome" required placeholder="Digite seu sobrenome">
+            </div>
+            <div>
+                <label for="nome-input">data de nascimento:</label>
+                <input type="date" name="data-nascimento" id="data-nascimento">
+            </div>
+            <div>
+                <label for="cpf-input">CPF:</label>
+                <input type="number" name="cpf" id="cpf-input" required placeholder="Digite seu CPF">
+            </div>
+            <div>
+                <label for="telefone-input">Numero de telefone:</label>
+                <input type="number" name="telefone-input" id="telefone-input" required placeholder="Digite seu numero">
+            </div>
+            <div>
                 <label for="email-input">Email:</label>
                 <input type="email" id="email-input" name="email" required placeholder="Digite seu email">
             </div>
             <div>
                 <label for="senha-input">Senha:</label>
-                <input type="password" id="senha-input" name="senha" required placeholder="Digite sua senha">
+                <input type="password" id="senha-input" name="senha" required placeholder="Crie sua senha">
             </div>
             <div>
                 <input type="submit" value="Confirmar">
