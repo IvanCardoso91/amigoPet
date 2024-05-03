@@ -1,3 +1,88 @@
-body{
-    background-color: blanchedalmond;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: auto;
+    height: 160px;
+    padding: 20px;
+    background-color: rgb(221, 221, 221);
+}
+
+.titulo {
+    width: auto;
+    height: 20px;
+    text-align: center;
+}
+
+.form{
+    padding: 10px;
+    margin-top: 50px;
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #93D49A;
+    border-radius: 10px;
+    border: 1px #72d37c solid;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.div-input{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    align-self: flex-end;
+}
+
+.links-container {
+    margin: 5px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#email-input {
+    width: 200px;
+    margin: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: x-large;
+}
+
+#senha-input {
+    width: 200px;
+    height: 30px;
+    font-size: x-large;
+    margin: 5px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+#submit-button {
+    width: 100px;
+    height: 25px;
+    font-size: medium;
+    margin: 5px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+#logo{
+    height: 150px;
 }
