@@ -1,3 +1,61 @@
-body{
-    background-color: blanchedalmond;
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 700px;
+}
+
+.titulo {
+    position: absolute;
+    right: 450px;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.form {
+    width: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.form-input {
+    height: 28px;
+    border-radius: 5px;
+    font-size: large;
+    width: 100%;
+}
+
+label {
+    font-size: larger;
+}
+
+.checkbox-div {
+    display: flex;
+    align-items: center;
+}
+
+#submit-button {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+#checkbox{
+    width: 15px;
+    height: 15px;
 }
