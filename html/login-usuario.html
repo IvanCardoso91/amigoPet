@@ -9,33 +9,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="/amigoPet/assets/AMIGOPET.svg" alt="logo amigopet">
-        </div>
-
-        <h1>Faça seu login</h1>
+    <header>
+        <img src="/amigoPet/assets/no-image-available.png" id="logo" alt="logo amigopet">
+    </header>
+    <div class="titulo">
+        <h2>Faça seu login</h2>
         <p>Para adotar um animalzinho, você precisa ter um cadastro</p>
-
-        <form action="/" method="POST">
-            <div>
+    </div>
+    <div class="form-container">
+        <form action="/" method="POST" class="form">
+            <div class="div-input">
                 <label for="email-input">Email:</label>
                 <input type="email" id="email-input" name="email" required placeholder="Digite seu email">
             </div>
-            <div>
+            <div class="div-input">
                 <label for="senha-input">Senha:</label>
-                <input type="password" id="senha-input" name="senha" required placeholder="Digite sua senha">
+                <input type="password" id="senha-input" name="senha" maxlength="4" required
+                    placeholder="digite sua senha">
             </div>
-            <div>
-                <input type="submit" value="Confirmar">
+            <div class="div-input">
+                <input type="submit" id="submit-button" value="Confirmar">
             </div>
-
-            <div class="links">
-                <a href="/esqueci-senha">Esqueceu sua senha?</a>
-                <a href="/cadastro">Não sou cadastrado</a>
+            <div class="links-container">
+                <a href="/esqueci-senha" class="links">Esqueceu sua senha?</a>
+                <a href="/cadastro" class="links">Não sou cadastrado</a>
             </div>
         </form>
     </div>
+
 </body>
 
 </html>
