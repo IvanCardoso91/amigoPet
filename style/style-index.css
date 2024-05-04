@@ -8,13 +8,15 @@ a {
     font-family: "Josefin Sans", sans-serif;
     text-decoration: none;
     color: #000;
-    font-size: 36px;
+    font-size: 28px;
 }
-h2{
+
+h2 {
     font-size: 30px;
     font-family: "Josefin Sans", sans-serif;
 }
-p{
+
+p {
     font-size: 20px;
     font-family: "Josefin Sans", sans-serif;
 }
@@ -24,6 +26,7 @@ p{
     padding: 20px;
     display: flex;
     align-items: center;
+    height: 40px;
 }
 
 .logo {
@@ -38,7 +41,6 @@ p{
     gap: 40px;
     cursor: pointer;
     flex-direction: row;
-
 }
 
 .login-header {
@@ -49,6 +51,26 @@ p{
     margin-left: 100px;
     border-radius: 5px;
     border: #3C9044;
+    width: auto;
+    border: 1px transparent;
+}
+
+.login-header:hover {
+    background-color: #65df71;
+}
+
+.cadastro-header {
+    align-items: center;
+    background-color: #93D49A;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 100px;
+    border-radius: 5px;
+    border: #3C9044;
+}
+
+.cadastro-header:hover {
+    background-color: #65df71;
 }
 
 .menu {
@@ -57,11 +79,14 @@ p{
     display: flex;
     align-items: center;
     height: 500px;
+    background-image: url(/amigoPet/assets/menu-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .conteudo-menu {
     font-size: 32px;
-    
+
 }
 
 .adote-menu {
@@ -73,25 +98,29 @@ p{
     border: #3C9044;
 }
 
-.servicos{
+.adote-menu:hover {
+    background-color: #65df71;
+}
+
+.servicos {
     padding: 50px;
     display: flex;
     align-items: center;
-    background-color: #b6e2ba ;
+    background-color: #b6e2ba;
 }
+
 .conteudo-servicos {
     max-width: 800px;
 }
- 
-.img-servicos{
- 
+
+.img-servicos {
     margin-right: 0;
 }
 
 .sobre-nos {
-padding: 50px;
-display: flex;
-align-items:center;
+    padding: 50px;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -109,5 +138,42 @@ align-items:center;
 
 .direitos {
     margin-bottom: 0;
-   
+
+}
+
+img {
+    width: 200px;
+    margin-left: 20px;
+}
+
+#servicos:hover{
+   color: #005008;
+}
+
+#sobre:hover{
+    color: #005008;
+}
+
+#contato:hover{
+    color: #005008;
+}
+
+#adote-ja{
+    color: #ffffff;
+}
+
+#cachorro-servicos{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e6e6e6;
+}
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background: #a1f786;
 }
