@@ -10,6 +10,14 @@ a {
     color: #000;
     font-size: 36px;
 }
+h2{
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+}
+p{
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
 
 .header {
     background-color: #F6F3F3;
@@ -44,13 +52,16 @@ a {
 }
 
 .menu {
-    padding: 50px;
+    padding: 30px;
+    padding-bottom: 60px;
     display: flex;
     align-items: center;
+    height: 500px;
 }
 
-.conteudo {
+.conteudo-menu {
     font-size: 32px;
+    
 }
 
 .adote-menu {
@@ -60,4 +71,43 @@ a {
     padding: 10px;
     border-radius: 5px;
     border: #3C9044;
+}
+
+.servicos{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #b6e2ba ;
+}
+.conteudo-servicos {
+    max-width: 800px;
+}
+ 
+.img-servicos{
+ 
+    margin-right: 0;
+}
+
+.sobre-nos {
+padding: 50px;
+display: flex;
+align-items:center;
+
+}
+
+.conteudo-sobre {
+    max-width: 800px;
+}
+
+.footer {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #F6F3F3;
+}
+
+
+.direitos {
+    margin-bottom: 0;
+   
 }
