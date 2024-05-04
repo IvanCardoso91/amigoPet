@@ -1,42 +1,56 @@
 body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    overflow: hidden;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    border: solid red;
+}
+
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .titulo {
-    position: absolute;
-    right: 450px;
-}
-
-.form-container {
-    width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
 }
 
+
 .form {
-    width: auto;
-    height: 500px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
+    justify-content: center;
+}
+
+.form div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form div label {
+    margin-top: 5px;
+}
+
+.form div input {
+    margin-top: 5px;
 }
 
 .form-input {
     height: 28px;
     border-radius: 5px;
     font-size: large;
-    width: 100%;
 }
 
 label {
@@ -48,14 +62,23 @@ label {
     align-items: center;
 }
 
-#submit-button {
-    width: 200px;
-    height: 40px;
-    margin-top: 10px;
-    margin-left: 60px;
+.form__content-submit {
+    flex-direction: row !important;
+    justify-content: center !important;
 }
 
-#checkbox{
+#submit-button {
+    width: 50%;
+}
+
+.form__content-checkbox {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+
+#checkbox {
     width: 15px;
     height: 15px;
 }
