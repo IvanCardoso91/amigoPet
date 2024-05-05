@@ -1,108 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cadastro usuario - Amigopet</title>
-    <link rel="stylesheet" href="../style/style-cadastro-usuario.css" />
-  </head>
 
-  <body>
-    <header>
-      <img src="/amigoPet/assets/no-image-available.png" alt="logo amigopet" />
-    </header>
-    <div class="form-container">
-      <div class="titulo">
-        <h1>Faça seu Cadastro Empresarial</h1>
-      </div>
-      <form action="/" method="POST" class="form">
-        <div>
-          <label for="nome_fantasia-input">Nome fantasia:</label>
-          <input
-            type="text"
-            class="form-input"
-            id="nome_fantasia-input"
-            name="nome"
-            required
-            placeholder="Digite o nome fantasia"
-          />
-        </div>
-        <div>
-          <label for="estado-input">Estado:</label>
-          <input
-            type="text"
-            name="estado"
-            class="form-input"
-            id="estado-input"
-            required
-            placeholder="Digite seu Estado"
-          />
-        </div>
-        <div>
-          <label for="cidade-input">Cidade:</label>
-          <input
-            type="text"
-            name="cidade"
-            class="form-input"
-            id="cidade-input"
-            required
-            placeholder="Digite sua cidade"
-          />
-        </div>
-        <div>
-          <label for="cnpj-input">CNPJ:</label>
-          <input
-            type="number"
-            name="cnpj"
-            class="form-input"
-            id="cnpj-input"
-            required
-            placeholder="Digite seu CNPJ"
-          />
-        </div>
-        <div>
-          <label for="telefone-input">Numero de telefone:</label>
-          <input
-            type="number"
-            name="telefone-input"
-            class="form-input"
-            id="telefone-input"
-            required
-            placeholder="Digite seu numero"
-          />
-        </div>
-        <div>
-          <label for="email-input">Email:</label>
-          <input
-            type="email"
-            class="form-input"
-            id="email-input"
-            name="email"
-            required
-            placeholder="Digite seu email"
-          />
-        </div>
-        <div>
-          <label for="senha-input">Senha:</label>
-          <input
-            type="password"
-            class="form-input"
-            id="senha-input"
-            name="senha"
-            required
-            placeholder="Crie sua senha"
-          />
-        </div>
-        <div class="form__content-submit">
-          <input type="submit" id="submit-button" value="Confirmar" />
-        </div>
-        <div class="form__content-checkbox">
-          <input type="checkbox" name="checkbox-noticias" id="checkbox" />
-          <label class="checkbox-noticias" for="checkbox-noticias"
-            >Quero receber noticias via email</label
-          >
-        </div>
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cadastro usuario - Amigopet</title>
+  <link rel="stylesheet" href="../style/style-cadastro-usuario.css" />
+</head>
+
+<body>
+  <header>
+    <a href="/amigoPet/html/index.html">
+      <img src="/amigoPet/assets/logo-menor.svg" id="logo" alt="logo amigopet">
+    </a>
+    <p id="header-p">toque na logo para voltar!</p>
+    <div id="seta"></div>
+  </header>
+  <div class="form-container">
+    <div class="titulo">
+      <h1>Faça seu Cadastro Empresarial</h1>
     </div>
-  </body>
+    <form action="/" method="POST" class="form">
+      <div>
+        <label for="nome_fantasia-input">Nome fantasia:</label>
+        <input type="text" class="form-input" id="nome_fantasia-input" name="nome" required
+          placeholder="Digite o nome fantasia" />
+      </div>
+      <div>
+        <label for="estado-input">Estado:</label>
+        <input type="text" name="estado" class="form-input" id="estado-input" required
+          placeholder="Digite seu Estado" />
+      </div>
+      <div>
+        <label for="cidade-input">Cidade:</label>
+        <input type="text" name="cidade" class="form-input" id="cidade-input" required
+          placeholder="Digite sua cidade" />
+      </div>
+      <div>
+        <label for="cnpj-input">CNPJ:</label>
+        <input type="number" name="cnpj" class="form-input" id="cnpj-input" required placeholder="Digite seu CNPJ" />
+      </div>
+      <div>
+        <label for="telefone-input">Numero de telefone:</label>
+        <input type="number" name="telefone-input" class="form-input" id="telefone-input" required
+          placeholder="Digite seu numero" />
+      </div>
+      <div>
+        <label for="email-input">Email:</label>
+        <input type="email" class="form-input" id="email-input" name="email" required placeholder="Digite seu email" />
+      </div>
+      <div>
+        <label for="senha-input">Senha:</label>
+        <input type="password" class="form-input" id="senha-input" name="senha" required placeholder="Crie sua senha" />
+      </div>
+      <div class="form__content-submit">
+        <input type="submit" id="submit-button" value="Confirmar" />
+      </div>
+      <div class="form__content-checkbox">
+        <input type="checkbox" name="checkbox-noticias" id="checkbox" />
+        <label class="checkbox-noticias" for="checkbox-noticias">Quero receber noticias via email</label>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>

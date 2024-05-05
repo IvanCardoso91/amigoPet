@@ -11,8 +11,6 @@ header {
     border: solid red;
 }
 
-
-
 .form-container {
     display: flex;
     justify-content: center;
@@ -77,8 +75,31 @@ label {
     align-items: center !important;
 }
 
-
 #checkbox {
     width: 15px;
     height: 15px;
+}
+
+#logo {
+    height: 60px;
+    width: 150px;
+}
+
+#header-p {
+    position: absolute;
+    top: 85px;
+    left: 45px;
+    font-size: 18px;
+    color: #000000;
+    font-size: 22px;
+}
+
+#seta {
+    position: absolute;
+    top: 102px;
+    left: 18px;
+    padding: 10px;
+    box-shadow: 2px -2px 0 1px #000 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
 }
