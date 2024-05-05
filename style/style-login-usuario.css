@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
 }
 
-header{
+header {
     width: auto;
     height: 60px;
     padding: 20px;
@@ -20,7 +20,7 @@ header{
     text-align: center;
 }
 
-.form{
+.form {
     padding: 10px;
     margin-top: 50px;
     height: 300px;
@@ -35,7 +35,7 @@ header{
     justify-content: center;
 }
 
-.div-input{
+.div-input {
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -78,17 +78,21 @@ header{
 #submit-button {
     width: 100px;
     height: 25px;
-    font-size: medium;
+    font-size: 15px;
     margin: 5px;
     border-radius: 5px;
 }
 
-#logo{
+#submit-button:hover {
+    background-color: #d6d0d0;
+}
+
+#logo {
     height: 60px;
     width: 150px;
 }
 
-#header-p{
+#header-p {
     position: absolute;
     top: 85px;
     left: 45px;
@@ -98,7 +102,7 @@ header{
 }
 
 #seta {
-    position: absolute; 
+    position: absolute;
     top: 102px;
     left: 18px;
     padding: 10px;
