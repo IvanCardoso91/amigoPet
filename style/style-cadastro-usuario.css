@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/amigoPet/assets/background-cadastro-usuario.jpg);
+    background-image: url(../assets/background-cadastro-usuario.jpg);
     background-size: 1400px 750px;
     background-repeat: no-repeat;
     height: 570px;
@@ -88,12 +88,12 @@ label {
     height: 15px;
 }
 
-#logo{
+#logo {
     height: 60px;
     width: 150px;
 }
 
-#header-p{
+#header-p {
     position: absolute;
     top: 63px;
     left: 45px;
@@ -103,7 +103,7 @@ label {
 }
 
 #seta {
-    position: absolute; 
+    position: absolute;
     top: 80px;
     left: 18px;
     padding: 10px;

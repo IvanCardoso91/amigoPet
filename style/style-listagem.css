@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
 main {
     padding: 20px;
     background-size: cover;
-    background-image: url(/amigoPet/assets/gato-background-listagem.jpg);
+    background-image: url(../assets/gato-background-listagem.jpg);
 }
 
 .filters {

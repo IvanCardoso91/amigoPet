@@ -1,7 +1,6 @@
 body {
     margin: 0%;
     padding: 0%;
-
 }
 
 a {
@@ -23,10 +22,10 @@ p {
 
 .header {
     background-color: #F6F3F3;
-    padding: 20px;
+    padding: 25px;
     display: flex;
     align-items: center;
-    height: 40px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -37,22 +36,22 @@ p {
     font-family: "Josefin Sans", sans-serif;
     display: flex;
     font-size: 32px;
-    margin-left: 135px;
     gap: 40px;
     cursor: pointer;
     flex-direction: row;
+    align-items: center;
+}
+
+.options a {
+    transition: color 0.3s ease;
 }
 
 .login-header {
-    align-items: center;
     background-color: #93D49A;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 100px;
     border-radius: 5px;
-    border: #3C9044;
     width: auto;
     border: 1px transparent;
+    padding: 0px 20px;
 }
 
 .login-header:hover {
@@ -60,13 +59,10 @@ p {
 }
 
 .cadastro-header {
-    align-items: center;
     background-color: #93D49A;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 100px;
     border-radius: 5px;
     border: #3C9044;
+    padding: 0px 20px;
 }
 
 .cadastro-header:hover {
@@ -74,12 +70,11 @@ p {
 }
 
 .menu {
-    padding: 30px;
-    padding-bottom: 60px;
+    padding: 50px 90px 90px 40px;
     display: flex;
     align-items: center;
     height: 500px;
-    background-image: url(/amigoPet/assets/menu-background.jpg);
+    background-image: url(../assets/menu-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -142,38 +137,79 @@ p {
 }
 
 img {
-    width: 200px;
+    width: 300px;
     margin-left: 20px;
 }
 
-#servicos:hover{
-   color: #005008;
-}
-
-#sobre:hover{
+#servicos:hover {
     color: #005008;
 }
 
-#contato:hover{
+#sobre:hover {
     color: #005008;
 }
 
-#adote-ja{
+#contato:hover {
+    color: #005008;
+}
+
+#adote-ja {
     color: #ffffff;
 }
 
-#cachorro-servicos{
+#cachorro-servicos {
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
     background-color: #e6e6e6;
 }
+
 ::-webkit-scrollbar {
     height: 5px;
     width: 10px;
     background: #ffffff;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #a1f786;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.popup:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.close-btn:hover {
+    background-color: #0056b3;
 }
