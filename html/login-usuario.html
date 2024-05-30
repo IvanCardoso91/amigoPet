@@ -1,55 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login usuario - Amigopet</title>
     <link rel="stylesheet" href="../style/style-login-usuario.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <a href="../html/index.html">
-        <img src="../assets/logo-menor.svg" id="logo" alt="logo amigopet" />
-      </a>
-      <p id="header-p">toque na logo para voltar!</p>
-      <div id="seta"></div>
+        <a href="../html/index.html">
+            <img src="../assets/logo-menor.svg" id="logo" alt="logo amigopet" />
+        </a>
     </header>
-    <div class="titulo">
-      <h2>Faça seu login</h2>
-      <p>Para adotar um animalzinho, você precisa ter um cadastro</p>
+    <div class="frase">
+        <h4>Para adotar um animalzinho, você precisa ter um cadastro</h4>
     </div>
     <div class="form-container">
-      <form action="/" method="POST" class="form">
-        <div class="div-input">
-          <label for="email-input">Email:</label>
-          <input
-            type="email"
-            id="email-input"
-            name="email"
-            required
-            placeholder="Digite seu email"
-          />
-        </div>
-        <div class="div-input">
-          <label for="senha-input">Senha:</label>
-          <input
-            type="password"
-            id="senha-input"
-            name="senha"
-            maxlength="4"
-            required
-            placeholder="digite sua senha"
-          />
-        </div>
-        <div class="div-input">
-          <input type="submit" id="submit-button" value="Confirmar" />
-        </div>
-        <div class="links-container">
-          <a href="/esqueci-senha" class="links">Esqueceu sua senha?</a>
-          <a href="/cadastro" class="links">Não sou cadastrado</a>
-        </div>
-      </form>
+        <form action="/" method="POST" class="form">
+            <h1 class="login-titulo">Login</h1>
+            <div class="div-input">
+                <input type="email" id="email-input" name="email" required placeholder="Email" />
+            </div>
+            <div class="div-input">
+                <input type="password" id="senha-input" name="senha" maxlength="4" required placeholder="Senha" />
+            </div>
+            <div class="div-input">
+                <input type="submit" id="submit-button" value="Confirmar" />
+            </div>
+            <div class="links-container">
+                <a href="/amigoPet/html/esqueceu-senha.html" class="links">Esqueceu sua senha?</a>
+                <a href="/amigoPet/html/cadastro-usuario.html" class="links">Não sou cadastrado</a>
+            </div>
+        </form>
     </div>
-  </body>
+</body>
+
 </html>

@@ -15,20 +15,15 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.frase {
-    width: auto;
-    height: 0;
-    text-align: center;
-}
-
-.login-titulo {
-    margin-left: 10%;
+.titulo{
+    display: flex;
+    justify-content: center;
     height: 0;
 }
 
 .form {
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 70px;
     height: 300px;
     width: 30%;
     display: flex;
@@ -49,20 +44,6 @@ header {
     margin-left: 10%;
 }
 
-.links {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    align-self: flex-end;
-}
-
-.links-container {
-    margin: 5px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 #email-input {
     width: 200px;
     margin: 5px;
@@ -73,21 +54,12 @@ header {
     font-size: large;
 }
 
-#senha-input {
-    width: 200px;
-    height: 30px;
-    font-size: large;
-    margin: 5px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
 #submit-button {
     width: 100px;
     height: 25px;
     font-size: 15px;
     margin: 5px;
-    border-radius: 5px;
+    margin-left: 10%;
 }
 
 #submit-button:hover {
