@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login ong - Amigopet</title>
+    <link rel="stylesheet" href="../style/style-login-ong.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../html/index.html">
+        <img src="../assets/logo-menor.svg" id="logo" alt="logo amigopet" />
+      </a>
+      <p id="header-p">toque na logo para voltar!</p>
+      <div id="seta"></div>
+    </header>
+    <div class="titulo">
+      <h2>Faça seu login da empresa</h2>
+    </div>
+    <div class="form-container">
+      <form class="form">
+        <div class="div-input">
+          <label for="cnpj">CNPJ:</label>
+          <input
+            type="text"
+            id="cnpj-input"
+            name="cnpj"
+            placeholder="00.000.000/0000-00"
+          />
+        </div>
+        <div class="div-input">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            required
+            placeholder="Digite o e-mail"
+          />
+        </div>
+        <div class="div-input">
+          <label for="senha-input">Senha:</label>
+          <input
+            type="password"
+            id="senha-input"
+            name="senha"
+            required
+            placeholder="Digite sua senha"
+          />
+        </div>
+        <div class="div-input">
+          <input type="submit" id="submit-button" value="Confirmar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
