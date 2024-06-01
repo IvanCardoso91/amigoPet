@@ -1,27 +1,29 @@
 body {
     margin: 0%;
     padding: 0%;
+    background-color: #E3E1E1;
 }
 
 a {
     font-family: "Josefin Sans", sans-serif;
     text-decoration: none;
-    color: #000;
+    color: #0B2813;
     font-size: 28px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 60px;
     font-family: "Josefin Sans", sans-serif;
+    color: #0B2813;
 }
 
 p {
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Josefin Sans", sans-serif;
 }
 
 .header {
-    background-color: #F6F3F3;
+    background-color: #A7FDAF;
     padding: 25px;
     display: flex;
     align-items: center;
@@ -47,7 +49,7 @@ p {
 }
 
 .login-header {
-    background-color: #93D49A;
+    background-color: #52C584;
     border-radius: 5px;
     width: auto;
     border: 1px transparent;
@@ -59,9 +61,9 @@ p {
 }
 
 .cadastro-header {
-    background-color: #93D49A;
+    background-color: #52C584;
     border-radius: 5px;
-    border: #3C9044;
+    border: #3F644F;
     padding: 0px 20px;
 }
 
@@ -74,9 +76,6 @@ p {
     display: flex;
     align-items: center;
     height: 500px;
-    background-image: url(../assets/menu-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .conteudo-menu {
@@ -87,10 +86,13 @@ p {
 .adote-menu {
     display: inline-block;
     text-align: center;
-    background-color: #93D49A;
+    background-color: #52C584;
     padding: 10px;
     border-radius: 5px;
-    border: #3C9044;
+    border: #3F644F;
+}
+.img-menu {
+    margin-left: auto;
 }
 
 .adote-menu:hover {
@@ -98,18 +100,29 @@ p {
 }
 
 .servicos {
-    padding: 50px;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    background-color: #b6e2ba;
-}
-
-.conteudo-servicos {
-    max-width: 800px;
+    align-items: flex-start;
+    background-color: #A7FDAF;
 }
 
 .img-servicos {
-    margin-right: 0;
+    margin-right: 20px;
+}
+
+.titulo-servicos {
+    margin-bottom: 40px; 
+    gap: 40px;
+    margin-right: 30px;
+}
+
+.conteudo-servicos {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-servicos {
+    max-width: 1000px;
 }
 
 .sobre-nos {
@@ -127,18 +140,13 @@ p {
     padding: 50px;
     display: flex;
     align-items: center;
-    background-color: #F6F3F3;
+    background-color: #A7FDAF;
 }
 
 
 .direitos {
     margin-bottom: 0;
 
-}
-
-img {
-    width: 300px;
-    margin-left: 20px;
 }
 
 #servicos:hover {
@@ -154,7 +162,7 @@ img {
 }
 
 #adote-ja {
-    color: #ffffff;
+    color: #0B2813;
 }
 
 #cachorro-servicos {
