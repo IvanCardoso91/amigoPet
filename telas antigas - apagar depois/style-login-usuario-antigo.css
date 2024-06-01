@@ -2,42 +2,32 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 100%;
-    background-color: #d6d0d0;
+    background-image: url(../assets/login-usuario-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
     width: auto;
     height: 60px;
     padding: 20px;
-    background-color: rgb(83, 192, 69);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(221, 221, 221);
 }
 
-.frase {
+.titulo {
     width: auto;
-    height: 0;
+    height: 20px;
     text-align: center;
-}
-
-.login-titulo {
-    display: flex;
-    justify-content: center;
-    margin: 5px;
 }
 
 .form {
     padding: 10px;
     margin-top: 50px;
-    height: 280px;
-    width: 400px;
+    height: 300px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     background: transparent;
-    background-color: #65c558;
-    border-radius: 1px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .form-container {
@@ -46,19 +36,20 @@ header {
 }
 
 .div-input {
+    margin: 5px;
     display: flex;
     justify-content: center;
-    margin: 5px;
+    align-items: baseline;
 }
 
 .links {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
     align-self: flex-end;
 }
 
 .links-container {
-    margin: 20px;
+    margin: 5px;
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
@@ -68,7 +59,8 @@ header {
 #email-input {
     width: 200px;
     margin: 5px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     border-radius: 5px;
     height: 30px;
     font-size: large;
@@ -76,11 +68,11 @@ header {
 
 #senha-input {
     width: 200px;
-    margin: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
     height: 30px;
     font-size: large;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 #submit-button {
@@ -96,6 +88,25 @@ header {
 }
 
 #logo {
-    height: 4rem;
-    width: 15rem;
+    height: 60px;
+    width: 150px;
+}
+
+#header-p {
+    position: absolute;
+    top: 85px;
+    left: 45px;
+    font-size: 18px;
+    color: #000000;
+    font-size: 22px;
+}
+
+#seta {
+    position: absolute;
+    top: 102px;
+    left: 18px;
+    padding: 10px;
+    box-shadow: 2px -2px 0 1px #000 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
 }

@@ -15,23 +15,17 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.frase {
-    width: auto;
-    height: 0;
-    text-align: center;
-}
-
-.login-titulo {
+.titulo{
     display: flex;
     justify-content: center;
-    margin: 5px;
+    height: 0;
 }
 
 .form {
     padding: 10px;
-    margin-top: 50px;
-    height: 280px;
-    width: 400px;
+    margin-top: 70px;
+    height: 300px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     background: transparent;
@@ -46,38 +40,15 @@ header {
 }
 
 .div-input {
-    display: flex;
-    justify-content: center;
     margin: 5px;
-}
-
-.links {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    align-self: flex-end;
-}
-
-.links-container {
-    margin: 20px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    margin-left: 10%;
 }
 
 #email-input {
     width: 200px;
     margin: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    height: 30px;
-    font-size: large;
-}
-
-#senha-input {
-    width: 200px;
-    margin: 5px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     border-radius: 5px;
     height: 30px;
     font-size: large;
@@ -88,7 +59,7 @@ header {
     height: 25px;
     font-size: 15px;
     margin: 5px;
-    border-radius: 5px;
+    margin-left: 10%;
 }
 
 #submit-button:hover {

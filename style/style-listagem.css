@@ -1,14 +1,18 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/background-cadastro-usuario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
     background-image: url('header-background.jpg');
     background-size: cover;
-    height: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
+    background-color: rgb(221, 221, 221);
 }
 
 .logo img {
@@ -18,8 +22,6 @@ header {
 
 main {
     padding: 20px;
-    background-size: cover;
-    background-image: url(../assets/gato-background-listagem.jpg);
 }
 
 .filters {
@@ -31,6 +33,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 .card {
@@ -58,4 +63,8 @@ main {
 
 #logo-amigopet {
     width: 200px;
+}
+
+#img-1{
+    background-image: url(/amigoPet/assets/gato-background-listagem.jpg);
 }

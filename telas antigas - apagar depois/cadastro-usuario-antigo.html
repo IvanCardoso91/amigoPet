@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cadastro usuario - Amigopet</title>
+    <link rel="stylesheet" href="../style/style-cadastro-usuario.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../html/index.html">
+        <img src="../assets/logo-menor.svg" id="logo" alt="logo amigopet" />
+      </a>
+      <p id="header-p">toque na logo para voltar!</p>
+      <div id="seta"></div>
+    </header>
+    <div class="form-container">
+      <div class="titulo">
+        <h1>Faça seu Cadastro</h1>
+      </div>
+      <form action="/" method="POST" class="form">
+        <div>
+          <label for="nome-input">Nome:</label>
+          <input
+            type="text"
+            class="form-input"
+            id="nome-input"
+            name="nome"
+            required
+            placeholder="Digite seu nome"
+          />
+          <input
+            type="text"
+            class="form-input"
+            id="sobrenome-input"
+            name="sobrenome"
+            required
+            placeholder="Digite seu sobrenome"
+          />
+        </div>
+        <div>
+          <label for="data-nascimento">data de nascimento:</label>
+          <input
+            type="date"
+            name="data-nascimento"
+            class="form-input"
+            id="data-nascimento"
+          />
+        </div>
+        <div>
+          <label for="cpf-input">CPF:</label>
+          <input
+            type="number"
+            name="cpf"
+            class="form-input"
+            id="cpf-input"
+            required
+            placeholder="Digite seu CPF"
+          />
+        </div>
+        <div>
+          <label for="telefone-input">Numero de telefone:</label>
+          <input
+            type="number"
+            name="telefone-input"
+            class="form-input"
+            id="telefone-input"
+            required
+            placeholder="Digite seu numero"
+          />
+        </div>
+        <div>
+          <label for="email-input">Email:</label>
+          <input
+            type="email"
+            class="form-input"
+            id="email-input"
+            name="email"
+            required
+            placeholder="Digite seu email"
+          />
+        </div>
+        <div>
+          <label for="senha-input">Senha:</label>
+          <input
+            type="password"
+            class="form-input"
+            id="senha-input"
+            name="senha"
+            required
+            placeholder="Crie sua senha"
+          />
+        </div>
+        <div class="form__content-submit">
+          <input type="submit" id="submit-button" value="Confirmar" />
+        </div>
+        <div class="form__content-checkbox">
+          <input type="checkbox" name="checkbox-noticias" id="checkbox" />
+          <label class="checkbox-noticias" for="checkbox-noticias"
+            >Quero receber noticias via email</label
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
