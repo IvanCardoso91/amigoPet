@@ -93,6 +93,16 @@ p {
     margin-left: auto;
 }
 
+.img-menu img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    /* Define a largura máxima da imagem */
+    display: block;
+    margin: 0 auto;
+    /* Centraliza a imagem horizontalmente */
+}
+
 .adote-menu:hover {
     background-color: #65df71;
 }
@@ -232,5 +242,101 @@ p {
 
 .close-popup-btn:hover {
     color: black;
-    /* Cor do X quando o cursor passar por cima */
+}
+
+@media (max-width: 1200px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+        height: 300px;
+    }
+
+    .img-menu {
+        display: none;
+    }
+
+    .conteudo-sobre {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .servicos {
+        text-align: center;
+    }
+
+    .texto-servicos {
+        text-align: center;
+    }
+
+    .logo-footer {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .options {
+        font-size: 24px;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .adote-menu {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .popup {
+        width: 90%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .logo-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo-sobre {
+        padding: 5px;
+    }
+
+    .header,
+    .login-header,
+    .cadastro-header {
+        width: 100%;
+        text-align: center;
+    }
 }
