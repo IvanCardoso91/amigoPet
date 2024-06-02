@@ -21,6 +21,15 @@
       </div>
     </header>
     <main>
+      <div id="popup-info" class="popup">
+        <div class="popup-content">
+          <span class="close-popup-btn" id="close-popup-info-btn">&times;</span>
+          <h2>Informações do Animal</h2>
+          <div id="animal-info">
+            <!-- Aqui só é adicionado informação que for incluida pelo JS, nao mexer nessa DIV -->
+          </div>
+        </div>
+      </div>
       <div class="filters">
         <select id="filtro">
           <option value="all">Todos</option>
@@ -98,13 +107,23 @@
     </main>
 
     <script>
+      function openPopup(popupId) {
+        const popup = document.getElementById(popupId);
+        popup.style.display = "block";
+      }
+
+      function closePopup(popupId) {
+        const popup = document.getElementById(popupId);
+        popup.style.display = "none";
+      }
+
       document.getElementById("filtro").addEventListener("change", function () {
-        const filtro = this.value.toLowerCase().trim(); // Converter para minúsculas e remover espaços em branco extras
+        const filtro = this.value.toLowerCase().trim();
         const cards = document.querySelectorAll(".card");
 
         cards.forEach((card) => {
-          const tipoElement = card.querySelector(".info h2"); // Selecionar o elemento h2 que contém o tipo de animal
-          if (!tipoElement) return; // Verificar se o elemento existe
+          const tipoElement = card.querySelector(".info h2");
+          if (!tipoElement) return;
 
           const tipoCompleto = tipoElement.textContent.toLowerCase().trim();
           const tipo = tipoCompleto.split(" ")[0];
@@ -116,6 +135,34 @@
           }
         });
       });
+
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", function () {
+          const animalName = this.querySelector(".info h2").textContent;
+          const animalInfo = getAnimalInfo(animalName);
+          const popupInfo = document.getElementById("popup-info");
+          const animalInfoElement = document.getElementById("animal-info");
+
+          animalInfoElement.innerHTML = animalInfo;
+
+          openPopup("popup-info");
+        });
+      });
+
+      function getAnimalInfo(animalName) {
+        if (animalName.toLowerCase().includes("gato")) {
+          return "<p>Informações adicionais sobre gatos...</p>";
+        } else if (animalName.toLowerCase().includes("cachorro")) {
+          return "<p>Informações adicionais sobre cachorros...</p>";
+        } else {
+          return "<p>Informações adicionais sobre outros animais...</p>";
+        }
+      }
+      document
+        .getElementById("close-popup-info-btn")
+        .addEventListener("click", function () {
+          closePopup("popup-info");
+        });
     </script>
   </body>
 </html>

@@ -58,6 +58,7 @@ main {
     border-radius: 5px;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -76,4 +77,35 @@ main {
 
 #logo-amigopet {
     width: 200px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#animal-info {
+    margin-top: 20px;
 }
