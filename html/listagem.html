@@ -1,95 +1,121 @@
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site de Produtos</title>
+    <link rel="stylesheet" href="../style/style-listagem.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Site de Produtos</title>
-  <link rel="stylesheet" href="../style/style-listagem.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
-</style>
-</head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../html/index.html">
+          <img
+            src="../assets/logo-menor.svg"
+            id="logo-amigopet"
+            alt="logo amigopet"
+        /></a>
+      </div>
+    </header>
+    <main>
+      <div class="filters">
+        <select id="filtro">
+          <option value="all">Todos</option>
+          <option value="cachorro">Cachorro</option>
+          <option value="gato">Gato</option>
+        </select>
+      </div>
 
-<body>
-  <header>
-    <div class="logo">
-      <a href="../html/index.html">
-      <img src="../assets/logo-menor.svg" id="logo-amigopet" alt="logo amigopet" /></a>
-    </div>
-  </header>
-  <main>
-    <div class="filters">
-      <label for="filter">Filtrar por Raça:</label>
-      <input type="text" id="filter-race" placeholder="Digite o nome da raça desejada" />
-      <label for="filter">Filtrar por Peso:</label>
-      <input type="number" id="filter-weight" placeholder="Escolha o peso que deseja" />
-      <button onclick="filterProducts()">Filtrar</button>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <img src="/amigoPet/assets/cachorro-1-listagem.jpg" id="img-1" alt="Cachorro 1" />
-        <div class="info">
-          <h2>Cachorro 1</h2>
-          <p>Raça: XXX</p>
-          <p>Tamanho: XXX</p>
-          <p>Peso: XXX</p>
-          <p>Idade: XXX</p>
+      <div class="container">
+        <div class="card">
+          <img
+            src="../assets/cachorro-1-listagem.jpg"
+            id="img-1"
+            alt="Cachorro 1"
+          />
+          <div class="info">
+            <h2>Cachorro 1</h2>
+            <p>Raça: Cachorro</p>
+            <p>Tamanho: XXX</p>
+            <p>Peso: XXX</p>
+            <p>Idade: XXX</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../assets/cachorro-2-listagem.jpg" alt="Cachorro 2" />
+          <div class="info">
+            <h2>Cachorro 2</h2>
+            <p>Raça: Cachorro</p>
+            <p>Tamanho: XXX</p>
+            <p>Peso: XXX</p>
+            <p>Idade: XXX</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../assets/cachorro-3-listagem.jpg" alt="Cachorro 3" />
+          <div class="info">
+            <h2>Cachorro 3</h2>
+            <p>Raça: Cachorro</p>
+            <p>Tamanho: XXX</p>
+            <p>Peso: XXX</p>
+            <p>Idade: XXX</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../assets/cachorro-4-listagem.jpg" alt="Cachorro 4" />
+          <div class="info">
+            <h2>Cachorro 4</h2>
+            <p>Raça: Cachorro</p>
+            <p>Tamanho: XXX</p>
+            <p>Peso: XXX</p>
+            <p>Idade: XXX</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../assets/gato1.avif" alt="Gato 1" />
+          <div class="info">
+            <h2>Gato 1</h2>
+            <p>Raça: Gato</p>
+            <p>Tamanho: XXX</p>
+            <p>Peso: XXX</p>
+            <p>Idade: XXX</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../assets/gato2.avif" alt="Gato 2" />
+          <div class="info">
+            <h2>Gato 2</h2>
+            <p>Raça: Gato</p>
+            <p>Tamanho: XXX</p>
+            <p>Peso: XXX</p>
+            <p>Idade: XXX</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="/amigoPet/assets/cachorro-2-listagem.jpg" alt="Cachorro 2" />
-        <div class="info">
-          <h2>Cachorro 2</h2>
-          <p>Raça: XXX</p>
-          <p>Tamanho: XXX</p>
-          <p>Peso: XXX</p>
-          <p>Idade: XXX</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/amigoPet/assets/cachorro-3-listagem.jpg" alt="Cachorro 3" />
-        <div class="info">
-          <h2>Cachorro 3</h2>
-          <p>Raça: XXX</p>
-          <p>Tamanho: XXX</p>
-          <p>Peso: XXX</p>
-          <p>Idade: XXX</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/amigoPet/assets/cachorro-4-listagem.jpg" alt="Cachorro 4" />
-        <div class="info">
-          <h2>Cachorro 4</h2>
-          <p>Raça: XXX</p>
-          <p>Tamanho: XXX</p>
-          <p>Peso: XXX</p>
-          <p>Idade: XXX</p>
-        </div>
-      </div>
-    </div>
-  </main>
+    </main>
 
-  <!--  <script>
-      function filterProducts() {
-        var input, filter, cards, card, title, i, txtValue;
-        input = document.getElementById("filter");
-        filter = input.value.toUpperCase();
-        cards = document.getElementsByClassName("card");
+    <script>
+      document.getElementById("filtro").addEventListener("change", function () {
+        const filtro = this.value.toLowerCase().trim(); // Converter para minúsculas e remover espaços em branco extras
+        const cards = document.querySelectorAll(".card");
 
-        for (i = 0; i < cards.length; i++) {
-          card = cards[i];
-          title = card.querySelector("h2");
-          txtValue = title.textContent || title.innerText;
+        cards.forEach((card) => {
+          const tipoElement = card.querySelector(".info h2"); // Selecionar o elemento h2 que contém o tipo de animal
+          if (!tipoElement) return; // Verificar se o elemento existe
 
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            card.style.display = "";
+          const tipoCompleto = tipoElement.textContent.toLowerCase().trim();
+          const tipo = tipoCompleto.split(" ")[0];
+
+          if (filtro === "all" || tipo === filtro) {
+            card.style.display = "block";
           } else {
             card.style.display = "none";
           }
-        }
-      }
-    </script> -->
-</body>
-
+        });
+      });
+    </script>
+  </body>
 </html>

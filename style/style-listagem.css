@@ -4,12 +4,16 @@ body {
     background-repeat: no-repeat;
     background-color: #E3E1E1;
 }
- p,h2, a{
-    color:#0B2813 ;
- }
+
+p,
+h2,
+a {
+    color: #0B2813;
+}
+
 header {
     background-color: #A7FDAF;
-    padding: 10px;        
+    padding: 10px;
     display: flex;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -28,6 +32,13 @@ main {
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+#filtro {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .container {
@@ -66,4 +77,3 @@ main {
 #logo-amigopet {
     width: 200px;
 }
-

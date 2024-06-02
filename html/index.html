@@ -1,119 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style-index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style-index.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
     </style>
     <title>amigopet</title>
-</head>
+  </head>
 
-<body>
-
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <h2>ATENÇÃO</h2>
-            <p>Selecione o login desejado abaixo</p>
-            <a href="../html/login-usuario.html" class="close-btn">Login adotante </a>
-            <a href="../html/login-ong.html" class="close-btn">Login ONG</a>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../assets/logo-maior.svg" alt="logo amigopet" />
+      </div>
+      <div class="options">
+        <a href="#servicos" id="servicos-options">Serviços</a>
+        <a href="#sobre-nos" id="sobre-options">Sobre nós</a>
+        <a href="#footer" id="contato-options">Contato</a>
+        <div class="login-header">
+          <a id="open-popup-login-btn">Entrar</a>
         </div>
+        <div class="cadastro-header">
+          <a id="open-popup-sign-btn">Cadastre-se</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background overlay for popups -->
+    <div id="popup-bg" class="popup-bg"></div>
+
+    <div id="popup-login" class="popup">
+      <div class="popup-content">
+        <span class="close-popup-btn" id="close-popup-login-btn">&times;</span>
+        <h2>ATENÇÃO</h2>
+        <p>Selecione o login desejado abaixo</p>
+        <a href="../html/login-usuario.html" class="close-btn"
+          >Login adotante</a
+        >
+        <a href="../html/login-ong.html" class="close-btn">Login ONG</a>
+      </div>
     </div>
 
     <div id="popup-sign" class="popup">
-        <div class="popup-content">
-            <h2>ATENÇÃO</h2>
-            <p>Selecione o cadastro desejado abaixo</p>
-            <a href="../html/cadastro-usuario.html" class="close-btn">Cadastro adotante </a>
-            <a href="../html/cadastro-ong.html" class="close-btn">Cadastro ONG</a>
-        </div>
-    </div>
-
-    <div class="header">
-        <div class="logo">
-            <img src="../assets/logo-maior.svg" alt="logo amigopet">
-        </div>
-        <div class="options">
-            <a href="#servicos" id="servicos-options">Serviços</a>
-            <a href="#sobre-nos" id="sobre-options">Sobre nós</a>
-            <a href="#footer" id="contato-options">Contato</a>
-            <div class="login-header">
-                <a href="#popup">Entrar</a>
-            </div>
-            <div class="cadastro-header">
-                <a href="#popup-sign">Cadastre-se</a>
-            </div>
-        </div>
+      <div class="popup-content">
+        <span class="close-popup-btn" id="close-popup-sign-btn">&times;</span>
+        <h2>ATENÇÃO</h2>
+        <p>Selecione o cadastro desejado abaixo</p>
+        <a href="../html/cadastro-usuario.html" class="close-btn"
+          >Cadastro adotante</a
+        >
+        <a href="../html/cadastro-ong.html" class="close-btn">Cadastro ONG</a>
+      </div>
     </div>
 
     <div class="menu">
-        <div class="conteudo-menu">
-            <h1 id="adote-ja">Adote já o seu novo <br>companheiro!</h1>
-            <div class="adote-menu">
-                <a href="../html/listagem.html">Adote</a>
-            </div>
+      <div class="conteudo-menu">
+        <h1 id="adote-ja">Adote já o seu novo <br />companheiro!</h1>
+        <div class="adote-menu">
+          <a href="../html/listagem.html">Adote</a>
         </div>
-        <div class="img-menu"><img src="../assets/img.menu.png" alt=""></div>
+      </div>
+      <div class="img-menu"><img src="../assets/img.menu.png" alt="" /></div>
     </div>
-    </div>
-   <section id="servicos" class="servicos">
-        <div class="conteudo">
-            <img src="../assets/img.servicos.png" class="img-servicos" id="cachorro-servicos">
-            <div class="titulo-servicos">
-                <h2>NOSSOS <br>SERVIÇOS</h2>
-            </div>
-        </div>
-        <div class="texto-servicos">
-            <p>Conectamos você a animais adoráveis em busca de um lar em Curitiba e região. Facilitamos a adoção
-                responsável, oferecendo uma plataforma para ONGs cadastrarem e divulgarem animais disponíveis. 
-                Simplificamos o processo de adoção, tornando mais fácil encontrar seu novo melhor amigo. Envolva-se
-                com nossa comunidade dedicada e apaixonada, comprometida em criar um mundo onde todos os animais 
-                tenham um lar amoroso. Ao se juntar a nós, você não apenas encontra um novo companheiro peludo, mas 
-                também faz parte de uma rede que promove o bem-estar animal e a conexão entre seres humanos e 
-                animais. Junte-se a nós e faça a diferença na vida de um amigo peludo hoje!</p>
-        </div>
-    </section>
-   
-    
 
+    <section id="servicos" class="servicos">
+      <div class="conteudo">
+        <img
+          src="../assets/img.servicos.png"
+          class="img-servicos"
+          id="cachorro-servicos"
+        />
+        <div class="titulo-servicos">
+          <h2>NOSSOS <br />SERVIÇOS</h2>
+        </div>
+      </div>
+      <div class="texto-servicos">
+        <p>
+          Conectamos você a animais adoráveis em busca de um lar em Curitiba e
+          região. Facilitamos a adoção responsável, oferecendo uma plataforma
+          para ONGs cadastrarem e divulgarem animais disponíveis. Simplificamos
+          o processo de adoção, tornando mais fácil encontrar seu novo melhor
+          amigo. Envolva-se com nossa comunidade dedicada e apaixonada,
+          comprometida em criar um mundo onde todos os animais tenham um lar
+          amoroso. Ao se juntar a nós, você não apenas encontra um novo
+          companheiro peludo, mas também faz parte de uma rede que promove o
+          bem-estar animal e a conexão entre seres humanos e animais. Junte-se a
+          nós e faça a diferença na vida de um amigo peludo hoje!
+        </p>
+      </div>
+    </section>
 
     <section id="sobre-nos" class="sobre-nos">
-        <div class="conteudo-sobre">
-            <h2>Sobre Nós</h2>
-            <p>Nós somos um grupo de estudantes do primeiro período do curso de Análise e
-                Desenvolvimento de Sistemas, e estamos muito empolgados em apresentar o Projeto AMIGOPET,
-                nosso projeto integrador que visa auxiliar na doação de animais de estimação.
-                O Projeto AMIGOPET foi concebido com o objetivo de facilitar o processo de adoção responsável
-                de cães e gatos, proporcionando uma plataforma intuitiva e amigável para os potenciais
-                adotantes encontrarem seu novo companheiro peludo. </p>
-            <p>Além disso, nosso projeto tem como missão
-                divulgar e apoiar ONGs e protetores independentes que trabalham incansavelmente para garantir
-                o bem-estar dos animais. Acreditamos que a tecnologia pode ser uma aliada poderosa na promoção do
-                cuidado com os animais, e estamos
-                comprometidos em usar nossas habilidades em programação para fazer a diferença
-                na vida dos nossos amigos de quatro patas.</p>
-
-        </div>
+      <div class="conteudo-sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+          Nós somos um grupo de estudantes do primeiro período do curso de
+          Análise e Desenvolvimento de Sistemas, e estamos muito empolgados em
+          apresentar o Projeto AMIGOPET, nosso projeto integrador que visa
+          auxiliar na doação de animais de estimação. O Projeto AMIGOPET foi
+          concebido com o objetivo de facilitar o processo de adoção responsável
+          de cães e gatos, proporcionando uma plataforma intuitiva e amigável
+          para os potenciais adotantes encontrarem seu novo companheiro peludo.
+        </p>
+        <p>
+          Além disso, nosso projeto tem como missão divulgar e apoiar ONGs e
+          protetores independentes que trabalham incansavelmente para garantir o
+          bem-estar dos animais. Acreditamos que a tecnologia pode ser uma
+          aliada poderosa na promoção do cuidado com os animais, e estamos
+          comprometidos em usar nossas habilidades em programação para fazer a
+          diferença na vida dos nossos amigos de quatro patas.
+        </p>
+      </div>
     </section>
 
     <section id="footer" class="footer">
-        <div class="logo-footer">
-            <img src="../assets/logo-menor.svg" alt="">
-            <div class="contato">
-                <h2>Contato</h2>
-                <p>EMAIL:amigopet@gmail.com</p>
-                <p>TELEFONE:+55 (00)9999-9999</p>
-            </div>
-            <div class="direitos">Amigopet. Alguns direitos reservados</div>
-            </p>
-
+      <div class="logo-footer">
+        <img src="../assets/logo-menor.svg" alt="" />
+        <div class="contato">
+          <h2>Contato</h2>
+          <p>EMAIL:amigopet@gmail.com</p>
+          <p>TELEFONE:+55 (00)9999-9999</p>
         </div>
-
+        <div class="direitos">Amigopet. Alguns direitos reservados</div>
+      </div>
     </section>
 
+    <script>
+      function openPopup(popupId) {
+        const popup = document.getElementById(popupId);
+        const popupBg = document.getElementById("popup-bg");
+        popup.classList.add("show");
+        popupBg.classList.add("show");
+      }
 
-</body>
+      function closePopups() {
+        const popups = document.querySelectorAll(".popup");
+        const popupBg = document.getElementById("popup-bg");
+        popups.forEach((popup) => {
+          popup.classList.remove("show");
+        });
+        popupBg.classList.remove("show");
+      }
 
+      // Adicionar eventos para abrir pop-ups
+      document
+        .getElementById("open-popup-login-btn")
+        .addEventListener("click", function () {
+          openPopup("popup-login");
+        });
+
+      document
+        .getElementById("open-popup-sign-btn")
+        .addEventListener("click", function () {
+          openPopup("popup-sign");
+        });
+
+      // Adicionar evento para fechar pop-ups ao clicar fora do conteúdo
+      window.addEventListener("click", function (event) {
+        const popups = document.querySelectorAll(".popup");
+        const popupBg = document.getElementById("popup-bg");
+        if (event.target === popupBg) {
+          closePopups();
+        }
+      });
+
+      // Adicionar eventos para fechar pop-ups ao clicar no botão de fechar
+      document
+        .getElementById("close-popup-login-btn")
+        .addEventListener("click", closePopups);
+      document
+        .getElementById("close-popup-sign-btn")
+        .addEventListener("click", closePopups);
+    </script>
+  </body>
 </html>

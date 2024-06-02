@@ -78,7 +78,6 @@ p {
 
 .conteudo-menu {
     font-size: 32px;
-
 }
 
 .adote-menu {
@@ -89,6 +88,7 @@ p {
     border-radius: 5px;
     border: #3F644F;
 }
+
 .img-menu {
     margin-left: auto;
 }
@@ -104,11 +104,12 @@ p {
 
 .conteudo {
     display: grid;
-    grid-template-columns: auto auto; 
+    grid-template-columns: auto auto;
     grid-gap: 0px;
 }
+
 .texto-servicos {
-    margin-top: 20px; 
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -118,21 +119,21 @@ p {
     align-items: center;
     text-align: center;
 }
+
 .conteudo-sobre {
     max-width: 800px;
-    margin-left:250px;
- 
+    margin-left: 250px;
 }
 
 .footer {
     background-color: #A7FDAF;
-     padding: 25px;
-    position: relative; 
+    padding: 25px;
+    position: relative;
 }
 
 .logo-footer {
     display: grid;
-    grid-template-columns: auto auto; 
+    grid-template-columns: auto auto;
 }
 
 .contato {
@@ -146,7 +147,6 @@ p {
     width: 100%;
 }
 
-
 #servicos:hover {
     color: #005008;
 }
@@ -158,7 +158,6 @@ p {
 #contato:hover {
     color: #005008;
 }
-
 
 #adote-ja {
     color: #0B2813;
@@ -183,6 +182,7 @@ p {
 }
 
 .popup {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -196,11 +196,6 @@ p {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-}
-
-.popup:target {
-    opacity: 1;
-    pointer-events: auto;
 }
 
 .popup-content {
@@ -218,5 +213,24 @@ p {
 }
 
 .close-btn:hover {
-    background-color:  #52C584;
+    background-color: #65df71;
+}
+
+.popup.show {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-popup-btn:hover {
+    color: black;
+    /* Cor do X quando o cursor passar por cima */
 }
