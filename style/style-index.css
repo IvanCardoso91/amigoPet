@@ -296,6 +296,10 @@ p {
 }
 
 @media (max-width: 480px) {
+    .html {
+        width: 650px;
+    }
+
     h2 {
         font-size: 40px;
     }
@@ -338,5 +342,13 @@ p {
     .cadastro-header {
         width: 100%;
         text-align: center;
+    }
+}
+
+
+
+@media (max-width: 650px) and (max-height: 850px) {
+    html {
+        width: 650px;
     }
 }
