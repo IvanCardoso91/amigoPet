@@ -109,3 +109,15 @@ main {
 #animal-info {
     margin-top: 20px;
 }
+
+.adote-menu {
+    text-align: center;
+    background-color: #52C584;
+    padding: 10px;
+    border-radius: 5px;
+    border: #3F644F;
+}
+
+.adote-menu:hover {
+    background-color: #65df71;
+}

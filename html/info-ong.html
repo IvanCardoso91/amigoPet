@@ -52,7 +52,7 @@
         <h2>Animais Cadastrados</h2>
         <ul id="animal-list">
           <li>
-            Gato - Felix
+            <a href="../html/listagem.html">Gato - Felix</a>
             <button
               class="delete-button"
               onclick="confirmDelete('Gato - Felix')"
@@ -61,7 +61,7 @@
             </button>
           </li>
           <li>
-            Cachorro - Rex
+            <a href="../html/listagem.html">Cachorro - Rex</a
             <button
               class="delete-button"
               onclick="confirmDelete('Cachorro - Rex')"
@@ -70,7 +70,7 @@
             </button>
           </li>
           <li>
-            Cachorro - Max
+            <a href="../html/listagem.html">Cachorro - Max</a
             <button
               class="delete-button"
               onclick="confirmDelete('Cachorro - Max')"
@@ -256,7 +256,7 @@
 
         const animalList = document.getElementById("animal-list");
         const newAnimal = document.createElement("li");
-        newAnimal.innerHTML = `${raca} - ${tamanho} - ${peso}kg - ${idade} anos <button class="delete-button" onclick="confirmDelete('${raca}')">X</button>`;
+        newAnimal.innerHTML = `<a href="../html/listagem.html"${raca} - ${tamanho} - ${peso}kg - ${idade} anos </a> <button class="delete-button" onclick="confirmDelete('${raca}')">X</button>`;
         animalList.appendChild(newAnimal);
 
         closeAddAnimalModal();

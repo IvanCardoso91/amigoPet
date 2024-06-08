@@ -97,6 +97,10 @@ header {
     padding: 10px;
 }
 
+.animal-list a {
+    text-decoration: none;
+}
+
 .chat {
     background-color: #f0f0f0;
 }
