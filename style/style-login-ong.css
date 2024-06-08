@@ -96,10 +96,15 @@ header {
     font-size: 15px;
     margin: 5px;
     border-radius: 5px;
+    text-align: center;
+    text-decoration: underline solid rgb(21, 139, 27) 3px;
+    padding-top: 2px;
 }
 
 #submit-button:hover {
-    background-color: #d6d0d0;
+    background-color: #2ea02e94;
+    text-decoration: none;
+    border-radius: 1px;
 }
 
 #logo {

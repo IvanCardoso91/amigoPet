@@ -30,6 +30,7 @@ p {
 
 .logo {
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .options {
@@ -97,10 +98,8 @@ p {
     max-width: 100%;
     height: auto;
     width: 300px;
-    /* Define a largura máxima da imagem */
     display: block;
     margin: 0 auto;
-    /* Centraliza a imagem horizontalmente */
 }
 
 .adote-menu:hover {
