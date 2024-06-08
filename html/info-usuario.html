@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info Usuário - Amigopet</title>
+    <link rel="stylesheet" href="../style/style-info-usuario.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="../html/index.html">
+        <img src="../assets/logo-menor.svg" id="logo" alt="logo amigopet" />
+      </a>
+    </header>
+    <div class="container">
+      <!-- Primeiro Bloco -->
+      <div class="block">
+        <h2>Informações do Usuário</h2>
+        <div class="form-group">
+          <div>
+            <label>E-mail do Usuário:</label>
+            <span>email@gmail.com</span>
+          </div>
+          <div>
+            <label>Número do Contato:</label>
+            <span>(99) 99999-9999</span>
+          </div>
+          <div>
+            <label>Nome Completo:</label>
+            <span>João Mathias</span>
+          </div>
+          <div>
+            <label>CPF:</label>
+            <span>000.000.000-00</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="button-blue" onclick="openPasswordModal()">
+            Redefinir sua Senha
+          </button>
+          <button class="button-yellow" onclick="openEditModal()">
+            Deseja editar seus dados?
+          </button>
+        </div>
+      </div>
+      <div class="block chat">
+        <h2>Contato com ONG's</h2>
+        <div class="tabs">
+          <button onclick="showTab(1)">ONG 1 - 1 GATO</button>
+          <button onclick="showTab(2)">ONG 2 - 1 CACHORRO</button>
+        </div>
+        <div id="tab1" class="tab-content">
+          <p>ONG: ONG 1</p>
+          <p>Animal: 1 GATO</p>
+          <p>Mensagem: Recebemos sua mensagem.</p>
+          <input type="text" placeholder="Responder..." />
+        </div>
+        <div id="tab2" class="tab-content">
+          <p>ONG: ONG 2</p>
+          <p>Animal: 1 CACHORRO</p>
+          <p>
+            Mensagem: Estamos disponibilizando todas as informações
+            requisitadas.
+          </p>
+          <input type="text" placeholder="Responder..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="passwordModal" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closePasswordModal()">×</button>
+        <h3>Redefinir Senha</h3>
+        <form onsubmit="handlePasswordChange(event)">
+          <label for="current-password">Senha Atual:</label>
+          <input type="password" id="current-password" required />
+          <label for="new-password">Nova Senha:</label>
+          <input type="password" id="new-password" required />
+          <div class="buttons">
+            <button type="submit" class="button-blue">Confirmar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closeEditModal()">×</button>
+        <h3>Editar Informações do Usuário</h3>
+        <form onsubmit="handleEditInfo(event)">
+          <label for="edit-email">E-mail do Usuário:</label>
+          <input
+            type="email"
+            id="edit-email"
+            value="email@gmail.com"
+            required
+          />
+          <label for="edit-contact">Número para Contato:</label>
+          <input
+            type="text"
+            id="edit-contact"
+            value="(99) 99999-9999"
+            required
+          />
+          <label for="edit-name">Nome Completo:</label>
+          <input type="text" id="edit-name" value="Nome Completo" required />
+          <label for="edit-cpf">CPF:</label>
+          <input type="text" id="edit-cpf" value="000.000.000-00" required />
+          <div class="buttons">
+            <button type="submit" class="button-blue">Confirmar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      let animalToDelete = "";
+
+      function openPasswordModal() {
+        document.getElementById("passwordModal").style.display = "flex";
+      }
+
+      function closePasswordModal() {
+        document.getElementById("passwordModal").style.display = "none";
+      }
+
+      function handlePasswordChange(event) {
+        event.preventDefault();
+        alert("Senha redefinida com sucesso!");
+        closePasswordModal();
+      }
+
+      function openEditModal() {
+        document.getElementById("editModal").style.display = "flex";
+      }
+
+      function closeEditModal() {
+        document.getElementById("editModal").style.display = "none";
+      }
+
+      function handleEditInfo(event) {
+        event.preventDefault();
+        const email = document.getElementById("edit-email").value;
+        const contact = document.getElementById("edit-contact").value;
+        const name = document.getElementById("edit-name").value;
+        const cpf = document.getElementById("edit-cpf").value;
+
+        document.querySelector(
+          ".form-group div:nth-child(1) span"
+        ).textContent = email;
+        document.querySelector(
+          ".form-group div:nth-child(2) span"
+        ).textContent = contact;
+        document.querySelector(
+          ".form-group div:nth-child(3) span"
+        ).textContent = name;
+        document.querySelector(
+          ".form-group div:nth-child(4) span"
+        ).textContent = cpf;
+
+        alert("Informações atualizadas com sucesso!");
+        closeEditModal();
+      }
+
+      function showTab(tabIndex) {
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        document.getElementById(`tab${tabIndex}`).classList.add("active");
+      }
+
+      // Default to showing the first tab
+      showTab(1);
+    </script>
+  </body>
+</html>
