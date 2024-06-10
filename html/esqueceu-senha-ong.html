@@ -19,14 +19,14 @@
     <div class="form-container">
       <div class="form">
         <h1 class="titulo">Recuperar senha</h1>
-        <h4 class="titulo">Informe o email de recuperação</h4>
+        <h4 class="titulo">Informe o CNPJ de sua ONG</h4>
         <div class="div-input">
           <input
             type="email"
             id="email-input"
             name="email"
             required
-            placeholder="Email"
+            placeholder="CNPJ"
           />
         </div>
         <input type="submit" id="submit-button" value="Confirmar" />
@@ -35,10 +35,7 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>
-          A senha foi enviada para o e-mail informado, por gentileza realizar
-          login
-        </p>
+        <p>Sua senha foi enviada ao e-mail vinculado ao CNPJ informado</p>
       </div>
     </div>
     <script>
@@ -48,13 +45,13 @@
 
       span.onclick = function () {
         modal.style.display = "none";
-        window.location = "../html/login-usuario.html";
+        window.location = "../html/login-ong.html";
       };
 
       window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
-          window.location = "../html/login-usuario.html";
+          window.location = "../html/login-ong.html";
         }
       };
 
