@@ -22,6 +22,24 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.button-list {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #a7fdaf;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.button-list:hover {
+    background: #19eb2e;
+}
+
 .container {
     display: flex;
     flex-direction: column;

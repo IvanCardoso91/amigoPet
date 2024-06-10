@@ -1,59 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro usuario - Amigopet</title>
     <link rel="stylesheet" href="../style/style-cadastro-usuario.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="../html/index.html">
-            <img src="../assets/logo-menor.svg" id="logo" alt="logo amigopet" />
-        </a>
+      <a href="../html/index.html">
+        <img src="../assets/logo-menor.svg" id="logo" alt="logo amigopet" />
+      </a>
     </header>
     <div class="frase">
-        <h4>Adotante, Cadastre-se aqui</h4>
+      <h4>Adotante, Cadastre-se aqui</h4>
     </div>
     <div class="form-container">
-        <form action="/" method="POST" class="form">
-            <h1 class="titulo-form">Cadastro Adotante</h1>
-            <div class="caixa-input">
-                <div>
-                    <input type="email" id="email-input" name="email" required 
-                    placeholder="Email" />
-                </div>
-                <div class="div-input">
-                    <input type="password" id="senha-input" name="senha" required
-                        placeholder="Crie sua senha" />
-                </div>
-                <div class="div-input">
-                    <input type="password" id="senha-input" name="confirmar-senha" required
-                        placeholder="Confirme sua senha" />
-                </div>
-                <div class="div-input">
-                    <input type="tel" id="telefone-input" name="phone" 
-                    placeholder="Seu numero de telefone" required />
-                </div>
-                <div class="div-input">
-                    <input type="text" id="nome-input" name="nome" required 
-                    placeholder="Nome completo" />
-                </div>
-                <div class="div-input">
-                    <input type="number" id="cpf-input" name="cpf" required
-                        placeholder="Seu CPF" />
-                </div>
-            </div>
-            <div class="div-input">
-                <input type="submit" id="submit-button" value="Confirmar" />
-            </div>  
-        </form>
+      <div class="form">
+        <h1 class="titulo-form">Cadastro Adotante</h1>
+        <div class="caixa-input">
+          <div>
+            <input
+              type="email"
+              id="email-input"
+              name="email"
+              required
+              placeholder="Email"
+            />
+          </div>
+          <div class="div-input">
+            <input
+              type="password"
+              id="senha-input"
+              name="senha"
+              required
+              placeholder="Crie sua senha"
+            />
+          </div>
+          <div class="div-input">
+            <input
+              type="password"
+              id="senha-input"
+              name="confirmar-senha"
+              required
+              placeholder="Confirme sua senha"
+            />
+          </div>
+          <div class="div-input">
+            <input
+              type="tel"
+              id="telefone-input"
+              name="phone"
+              placeholder="Seu numero de telefone"
+              required
+            />
+          </div>
+          <div class="div-input">
+            <input
+              type="text"
+              id="nome-input"
+              name="nome"
+              required
+              placeholder="Nome completo"
+            />
+          </div>
+          <div class="div-input">
+            <input
+              type="number"
+              id="cpf-input"
+              name="cpf"
+              required
+              placeholder="Seu CPF"
+            />
+          </div>
+        </div>
+        <div class="div-input">
+          <input type="submit" id="submit-button" value="Confirmar" />
+        </div>
+      </div>
     </div>
-</body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Um código foi enviado ao seu email para confirmar cadastro.</p>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("myModal");
 
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function () {
+        modal.style.display = "none";
+        window.location = "../html/index.html";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          window.location = "../html/index.html";
+        }
+      };
+
+      document
+        .getElementById("submit-button")
+        .addEventListener("click", function (event) {
+          modal.style.display = "block";
+        });
+    </script>
+  </body>
 </html>
